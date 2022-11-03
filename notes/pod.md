@@ -12,3 +12,9 @@ Pods also contain shared networking and storage resources for their containers:
 A Pod is meant to run a single instance of your application on your cluster. However, it is not recommended to create individual Pods directly. Instead, you generally create a set of identical Pods, called replicas, to run your application.
 
 A Pod contains a name and a label. Labels can be used to group multiple pods of the same "type"
+
+
+## Useful Commands
+- `kubectl get po`
+- `kubectl delete <pod-name>`
+- `kubectl describe pod <pod-name>`

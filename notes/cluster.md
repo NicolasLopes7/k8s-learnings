@@ -5,3 +5,8 @@ most atomic thing on kubernetes. Pod represents a single instance of a running p
 in other words, your container.
 
 ideally you should have only one container per Pod.
+
+
+## Useful Commands
+- `kind create cluster --config=<file-path>`
+- `kind get clusters`
