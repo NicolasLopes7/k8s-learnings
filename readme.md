@@ -7,7 +7,7 @@ i'm using kind and kubectl on my local machine, so all the commands will be base
 > kind create cluster --config=<file-path>
 ```
 
-> How to apply a pod/replicate/anything on your cluster?
+> How to apply a pod/replicaSet/anything on your cluster?
 ```sh
 kubectl apply -f <file-path>
 ```
