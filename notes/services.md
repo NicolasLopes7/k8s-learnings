@@ -40,6 +40,12 @@ Example:
 So, the NodePort service generates a port on the range of 3000 - 32767 (high ports), then, when find a free port, it assignes to all the nodes the port that it has founded.
 
 But nodeport is not secure at all, you're exposing all your nodes to the word. it's hard to find it in production, we have better services to handle it.
+
+## LoadBalancer
+That one is really neat when you're using your kubernetes cluster on a managed enviroment (such as AWS, GCP, Azure). It creates a Load Balancer (on the provider) and expose the application to the internet. The cloud provider will provide a mechanism for routing the traffic to the services. The most common example usage of this type is for a website.
+
+Under the hood the LoadBalancer use the `ClusterIP` and `NodePort`. 
+
 ## Useful Commands
 
 > Tip: `svc` is the alias for `service`
