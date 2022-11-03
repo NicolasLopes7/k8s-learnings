@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
   - name: node-server
-    image: "nicolaslopes/hello-node:latest"
+    image: "nicolaslopes/hello-node"

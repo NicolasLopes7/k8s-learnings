@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-server-service
+spec:
+  selector:
+    app: node-server
+  type: ClusterIP
+  ports:
+    - name: node-server-http
+      port: 80
+      protocol: TCP
