@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "node-server"
+  labels:
+    app: "server"
+spec:
+  containers:
+  - name: node-server
+    image: "nicolaslopes/hello-node:latest"
