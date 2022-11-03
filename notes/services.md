@@ -26,8 +26,20 @@ Each of these types of pods lying within an internal cluster will have a differe
 
 It has to simply communicate to a ClusterIP service named backend, which is a single endpoint service managing the communication to all backend pods. Similarly, if backend pods need to access the Redis cache service it has to make a service call to cluster IP service named Redis, which will allow the backend pods to communicate to respective Redis pods.
 
+#### NodePort
+When we need to access our service out of the kubernetes services, NodePort is the best server to help you.
 
+Example:
+```
+- Node 1: 30000> <32767 ---> 30001 
+- Node 2: 30001
+- Node 3: 30001
+- Node 4: 30001
+```
 
+So, the NodePort service generates a port on the range of 3000 - 32767 (high ports), then, when find a free port, it assignes to all the nodes the port that it has founded.
+
+But nodeport is not secure at all, you're exposing all your nodes to the word. it's hard to find it in production, we have better services to handle it.
 ## Useful Commands
 
 > Tip: `svc` is the alias for `service`
