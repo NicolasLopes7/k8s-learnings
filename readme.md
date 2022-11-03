@@ -16,3 +16,5 @@ kubectl apply -f <file-path>
 - [Cluster](./notes/cluster.md)
 - [Pod](./notes/pod.md)
 - [ReplicaSet](./notes/replicaset.md)
+- [Deployment](./notes/deployment.md)
+- [Rollouts and Revisions](./notes/rollouts-and-revisions.md)
