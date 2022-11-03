@@ -12,3 +12,7 @@ i'm using kind and kubectl on my local machine, so all the commands will be base
 kubectl apply -f <file-path>
 ```
 
+
+- [Cluster](./notes/cluster.md)
+- [Pod](./notes/pod.md)
+- [ReplicaSet](./notes/replicaset.md)
