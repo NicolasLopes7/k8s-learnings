@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-server-node-port-service
+spec:
+  selector:
+    app: node-server
+  type: NodePort
+  ports:
+    - name: node-server-http
+      port: 80
+      nodePort: 30001
+      protocol: TCP
