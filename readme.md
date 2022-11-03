@@ -18,3 +18,4 @@ kubectl apply -f <file-path>
 - [ReplicaSet](./notes/replicaset.md)
 - [Deployment](./notes/deployment.md)
 - [Rollouts and Revisions](./notes/rollouts-and-revisions.md)
+- [Service](./notes/services.md)
