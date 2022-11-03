@@ -9,4 +9,6 @@ spec:
   ports:
     - name: node-server-http
       port: 80
+      # we can add a targetPort to refer to the container's port. when no `targetPort` is specified
+      # will use the same value of the port.
       protocol: TCP
