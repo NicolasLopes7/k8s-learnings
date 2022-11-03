@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-server
+  labels:
+    app: server
+spec:
+  selector:
+    matchLabels:
+      app: server
+  replicas: 2
+  template:
+  # this is exactly the same content of ./pod.yaml
+    metadata:
+      labels:
+        app: "server"
+    spec:
+      containers:
+        - name: node-server
+          image: "nicolaslopes/hello-node:latest"
