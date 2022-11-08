@@ -17,7 +17,15 @@ spec:
     spec:
       containers:
         - name: node-server
-          image: "nicolaslopes/hello-node:v9"
+          image: "nicolaslopes/hello-node:v9.1"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            periodSeconds: 5
+            failureThreshold: 3
+            timeoutSeconds: 1
+            successThreshold: 1
           envFrom:
             - configMapRef:
                 name: node-server-env
