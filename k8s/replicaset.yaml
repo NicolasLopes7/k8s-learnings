@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
         - name: node-server
-          image: "nicolaslopes/hello-node"
+          image: "nicolaslopes/hello-node:v2"
