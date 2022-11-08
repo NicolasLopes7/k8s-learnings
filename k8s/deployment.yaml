@@ -17,7 +17,9 @@ spec:
     spec:
       containers:
         - name: node-server
-          image: "nicolaslopes/hello-node:v8"
+          image: "nicolaslopes/hello-node:v9"
           envFrom:
             - configMapRef:
                 name: node-server-env
+            - secretRef:
+                name: node-server-secret
